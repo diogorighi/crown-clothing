@@ -39,9 +39,9 @@ const sectionsMock = [
 ];
 
 function Directory() {
-  const [sections, setSections] = useState(sectionsMock);
+  const [sections] = useState(sectionsMock);
   return (
-    <div class="directory-menu">
+    <div className="directory-menu">
       {sections.map(({ title, imageUrl, id, size }) => (
         <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
       ))}
